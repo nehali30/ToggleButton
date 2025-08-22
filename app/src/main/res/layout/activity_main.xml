@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFF9C4"
+    android:id="@+id/mainLayout"
+    tools:context=".MainActivity">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="☀️Sunny"
+        android:textOn="🌧️Rainy"
+        android:id="@+id/weatherToggle"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:id="@+id/weatherImage"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sun"/>
+
+
+    <TextView
+        android:id="@+id/weatherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It's A Bright Sunny Day!"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/openTipsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherText"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#4ECFD8"
+        android:text="View Weather Tips" />
+
+</LinearLayout>
